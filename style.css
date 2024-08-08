@@ -10,7 +10,7 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 375px) and (max-width: 600px) {
     body {
         width: 375px;
         font-family: "Poppins", sans-serif;
@@ -46,18 +46,20 @@
         font-size: 1.5em;
     }
     p.description {
+        width: 100%;
         line-height: 1.5em;
         padding: 0 1em 1em 1em;
     }
     main {
         width: 85%;
-        margin: 0 auto 5em;
+        margin: 0 auto 5em auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     section {
         width: ;
-        margin: 2em 0 0 0;
+        margin: 2em auto 0 auto;
         padding: 1.4em;
         background: hsl(0, 0%, 100%);
         box-shadow: 0 0 16px hsla(180, 62%, 55%, 0.15);
@@ -92,7 +94,7 @@
         border-top: 0.3em solid hsl(212, 86%, 64%);
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 1440px) {
+@media screen and (min-width: 600px) and (max-width: 1440px) {
     body {
         width: 1440px;
         position: relative;
